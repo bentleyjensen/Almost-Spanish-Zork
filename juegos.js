@@ -8,16 +8,16 @@ var current = 'voy al cuarto de frente';
 
 // List of things to complete
 var ScavengerList = [
-    'una mesa',//kitchen
-    'un almuerzo',//kitchen
-    'una ventana',//kitchen
+    'la mesa',//kitchen
+    'el almuerzo',//kitchen
+    'la ventana',//kitchen
     'veo la tele',//front
     'el juego',//front
     'tocar la guitarra',//front
-    'una bicicleta',//exterior
+    'la bicicleta',//exterior
     'la pelota',//exterior
     'las botas',//exterior
-    'un escritorio',//office
+    'el escritorio',//office
     'la papelera',//office
     'el lápiz',//office
     'los parientes',//hall/corridor
@@ -69,7 +69,7 @@ var area = {
         console.log('Tú ves tus parientes. Estan enojado, escapas!');
         Backpack.push('los parientes');
         check();
-        current = cuarto;
+        current = 'voy a mi cuarto';
         Go();
     }
 }
@@ -78,7 +78,6 @@ function Welcome() {
     console.log("Tu nombre es Matt. Tú eres estadounidense.");
     console.log("Tú perdiste muchas cosas. ¡Vas a buscarlos!");
     area[current]();
-    Go();
 }
 
 function Done() {
