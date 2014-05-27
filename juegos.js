@@ -84,7 +84,7 @@ function Done() {
     console.log('¡Tú ganas el juego! You\'ve won!');
 }
 function Bad() {
-    console.log("¡Yo no sé qué lo es!");
+    console.log("¡Yo no sé qué es!");
     area[current]();
 }
 function check(something) {
